@@ -3,11 +3,11 @@ body {
   width: 100%;
   font-family: "poppins", sans-serif;
   color: #d57442;
-  background: #084177;
+  background: white;
 }
 
 .navbar {
-  padding: 0.8rem;
+  background: #084177;
 }
 
 .navbar a {
@@ -23,19 +23,13 @@ body {
   font-size: 1.1em;
 }
 
-.container-fluid {
-  background-color: #084177;
-  padding: 20px;
+.main {
+  height: 670px;
+  margin: 20px;
 }
 
 #personName {
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 #personImg {
@@ -61,9 +55,21 @@ body {
   margin: 1rem;
 }
 
+.social {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social p {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
 .social a {
-  font-size: 4.5em;
-  padding: 3rem;
+  font-size: 4.1em;
+  padding: 0 3rem 0 3rem;
 }
 
 .fa-facebook {
@@ -95,8 +101,8 @@ body {
 }
 
 footer {
+  background-color: #084177;
   color: #d5d5d5;
-  padding-top: 2rem;
 }
 
 footer a {
@@ -104,9 +110,6 @@ footer a {
 }
 
 .footerInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -115,7 +118,7 @@ footer a {
 @media (max-width: 992px) {
   .social a {
     font-size: 4em;
-    padding: 2rem;
+    padding: 0 2rem 0 2rem;
   }
 }
 
@@ -124,8 +127,8 @@ footer a {
     font-size: 200%;
   }
   .social a {
-    font-size: 2.5em;
-    padding: 1.2rem;
+    font-size: 2.2em;
+    padding: 0 1.2rem 0 1.2rem;
   }
 }
 
@@ -135,7 +138,11 @@ footer a {
   }
   .social a {
     font-size: 2em;
-    padding: 0.7rem;
+    padding: 0 0.7rem 0 0.7rem;
   }
+}
+
+hr {
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */
